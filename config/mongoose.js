@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
+const dotenv = require("dotenv");
+dotenv.config();
 
-mongoose.connect('mongodb+srv://Garvit:JXybBho57CobnRA0@learning.rosxd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
+mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@learning.rosxd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`);
 
 db=mongoose.connection;
 
