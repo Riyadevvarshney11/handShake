@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/garvit170/RgR_Innovathon#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
+    "ejs-layouts": "^0.0.1",
     "express": "^4.17.1",
     "mongoose": "^6.0.9",
     "nodemon": "^2.0.13"
