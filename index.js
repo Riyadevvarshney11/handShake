@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require("dotenv")
-const port = 6000;
+const port = 3000;
 const app=express();
 const db = require('./config/mongoose');
 
