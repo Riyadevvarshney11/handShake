@@ -1,0 +1,25 @@
+{
+  "name": "rgr_innovathon",
+  "version": "1.0.0",
+  "description": "Innovathon Hackathon submission",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garvit170/RgR_Innovathon.git"
+  },
+  "author": "garvit, riya, ridham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garvit170/RgR_Innovathon/issues"
+  },
+  "homepage": "https://github.com/garvit170/RgR_Innovathon#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.9",
+    "nodemon": "^2.0.13"
+  }
+}
