@@ -7,6 +7,10 @@ const homeController=require('../controllers/homeController');
 
 router.get('/',homeController.home);
 router.get('/login',homeController.login);
+router.get('/featured',homeController.featured);
+router.get('/schools_colleges',homeController.edu);
+router.get('/investors',homeController.investors);
+router.get('/learn',homeController.learn)
 router.get('/startups',homeController.startups);
 router.use('/signup',require('./signUp'));
 /* 
