@@ -6,7 +6,8 @@ const homeController=require('../controllers/homeController');
 
 
 router.get('/',homeController.home);
-router.get('/login',homeController.login)
+router.get('/login',homeController.login);
+router.get('/startups',homeController.startups);
 router.use('/signup',require('./signUp'));
 /* 
 for any further requests, access from here
