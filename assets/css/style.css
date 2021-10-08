@@ -755,19 +755,19 @@ section {
     padding-right: 0;
   }
 }
-/* @media (max-width: 992px) {
+@media (max-width: 992px) {
   .info-box {
     /* img {
       padding-top: 30px;
     } */
-  /* }
+  }
   .info-box .content {
     padding-top: 30px;
   }
   .info-box .accordion-list {
     padding-bottom: 30px;
   }
-} */ */
+}
 
 /*--------------------------------------------------------------
 # Our Portfolio
@@ -1272,3 +1272,33 @@ section {
   font-size: 13px;
   color: #fff;
 }
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+nav.navbar ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.navbar ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.navbar ul li a:hover:after {
+  width: 100%;
+}
+
