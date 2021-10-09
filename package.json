@@ -2,10 +2,10 @@
   "name": "rgr_innovathon",
   "version": "1.0.0",
   "description": "Innovathon Hackathon submission",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,11 +18,15 @@
   },
   "homepage": "https://github.com/garvit170/RgR_Innovathon#readme",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "ejs-layouts": "^0.0.1",
     "express": "^4.17.1",
-    "mongoose": "^6.0.9",
+    "mongoose": "^6.0.9"
+  },
+  "devDependencies": {
+    "http-server": "^13.0.2",
     "nodemon": "^2.0.13"
   }
 }
