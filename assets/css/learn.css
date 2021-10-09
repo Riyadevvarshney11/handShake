@@ -71,4 +71,6 @@
     position: relative;
     z-index: 2;
   }
-  
+  .learnicon{
+    height: auto;
+  }
