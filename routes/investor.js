@@ -6,6 +6,7 @@ const investorsController=require('../controllers/investorsController');
 
 
 router.post('/create',investorsController.create);
+router.get('/sign-out',investorsController.destroySession);
 
 //use passport as a middleware to authenticate
 router.post('/create-session', passport.authenticate(

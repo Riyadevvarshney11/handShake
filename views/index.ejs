@@ -103,7 +103,11 @@
           <li><a class="nav-link scrollto" href="/featured">Featured</a></li>
           <li><a class="nav-link scrollto" href="/schools_colleges">Schools/Colleges</a></li>
           <li><a class="nav-link scrollto" href="/learn">Learn</a></li>
+          <% if(locals.user){  %> 
+          <li><a class="nav-link scrollto" href="/investor/sign-out"><span style="color: #EF5A5A;"> Sign Out  </span></a></li>
+          <% }else{  %> 
           <li><a class="nav-link scrollto" href="/login"><span style="color: #EF5A5A;">Sign In</span></a></li>
+          <% } %> 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
