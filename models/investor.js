@@ -10,11 +10,16 @@ const InvestorSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
+    company : {
+        type: String,
+        required: true,
+        unique: true
+    },
     password: {
         type: String,
         required: true
     },
-    contactInfo: {
+    phone: {
         type: String,
         required: true
     }

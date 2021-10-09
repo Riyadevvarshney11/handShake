@@ -28,7 +28,7 @@
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="#">
+		<form action="/investor/create-session" method="POST">
 			<h1>Investor Sign In</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -36,10 +36,10 @@
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
 			<span>or use your account</span>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
+			<input type="email" placeholder="Email" name="email" />
+			<input type="password" placeholder="Password" name="password" />
 			<a href="#">Forgot your password?</a>
-			<button>Sign In</button>
+			<button type="submit"> Sign Up</button>
 		</form>
 	</div>
 	<div class="overlay-container">
@@ -48,13 +48,18 @@
 				<h1>Not a startup?</h1>
 				<p>SignIn as an investor here!</p>
 				<button class="ghost" id="signIn">Sign In as investor</button>
-                <button class="ghost" style="margin-top: 20px;" value="none">Back to Home</button>
+
+				<a href="/">
+					<button class="ghost" style="margin-top: 20px;" value="none">Back to Home</button> 
+				</a>
 			</div>
 			<div class="overlay-panel overlay-right">
 				<h1>Not an investor?</h1>
 				<p>Sign In as a startup here!</p>
 				<button class="ghost" id="signUp">Sign In as Startup</button>
-                <button class="ghost" style="margin-top: 20px;" value="none">Back to Home</button>
+                <a href="/">
+					<button class="ghost" style="margin-top: 20px;" value="none">Back to Home</button> 
+				</a>
 			</div>
 		</div>
 	</div>

@@ -19,12 +19,17 @@
   "homepage": "https://github.com/garvit170/RgR_Innovathon#readme",
   "dependencies": {
     "animate.css": "^4.1.1",
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "^1.4.5",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "ejs-layouts": "^0.0.1",
     "express": "^4.17.1",
+    "express-session": "^1.17.2",
     "hover.css": "^2.3.2",
-    "mongoose": "^6.0.9"
+    "mongoose": "^6.0.9",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {
     "http-server": "^13.0.2",

@@ -13,6 +13,7 @@ router.get('/investors',homeController.investors);
 router.get('/learn',homeController.learn)
 router.get('/startups',homeController.startups);
 router.use('/signup',require('./signUp'));
+router.use('/investor',require('./investor'));
 /* 
 for any further requests, access from here
 router.use('/routerName , require('./routerFile))
