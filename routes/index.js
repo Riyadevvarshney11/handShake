@@ -14,6 +14,9 @@ router.get('/learn',homeController.learn)
 router.get('/startups',homeController.startups);
 router.use('/signup',require('./signUp'));
 router.use('/investor',require('./investor'));
+router.get('/startup_db',homeController.startup_db)
+router.get('/investor_db',homeController.investor_db);
+
 /* 
 for any further requests, access from here
 router.use('/routerName , require('./routerFile))
