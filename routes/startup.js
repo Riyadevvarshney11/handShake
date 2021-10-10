@@ -10,7 +10,7 @@ router.get('/sign-out',startupsController.destroySession);
 
 //use passport as a middleware to authenticate
 router.post('/create-session', passport.authenticate(
-    'local', //strategy to use
+    'startup-local', //strategy to use
     {failureRedirect: '/learn'}
 ) ,startupsController.createSession);
 
