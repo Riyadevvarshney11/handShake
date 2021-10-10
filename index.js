@@ -16,7 +16,6 @@ dotenv.config();
 app.use(express.urlencoded());
 
 
-
 //================ Static Files ==================
 app.use(express.static('./assets'));
 app.use(cookieParser());
@@ -64,3 +63,4 @@ app.listen(port,function(err){
     }
     console.log(`Server is running on port: ${port}`);
 });
+

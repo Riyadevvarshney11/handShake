@@ -29,3 +29,11 @@ module.exports.edu = function(req,res){
 module.exports.featured = function(req,res){
     return res.render('featured');
 }
+
+module.exports.startup_db = function(req,res){
+    return res.render('startup_db');
+}
+
+module.exports.investor_db = function(req,res){
+    return res.render('investor_db');
+}
