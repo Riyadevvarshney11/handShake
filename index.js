@@ -67,7 +67,7 @@ app.get('/razorpay',(req,res)=>{
 })
 app.post('/order',(req,res) => {
     let options ={
-        "amount": 50000,
+        "amount": 1000000000,
         "currency": "INR",
         
     };

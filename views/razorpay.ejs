@@ -57,37 +57,58 @@
 
         </div>
     </header><!-- End Header -->
-  
-    <section class="hero is-link is-fullheight" >
-     
-        <div class="hero-body is-centered">
-            <div class="container">
-                <div class="columns is-centered is-vcentered">
-                    
-                    <div class="column is-6">
+    <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
-                      
-                        <p class="title is-size-1">CRED</p>
-                        <p class="subtitle is-size-4" style="color: #ffa952;">Invest INR 10,00,000 to our Startup</p>
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-                        <button class="button is-link is-light is-medium" id="rzp-button1">INVEST</button>
-                        <a href="/comingsoon"><button class="button is-link is-light is-medium" id="rzp-button1">INVEST in CRYPTO</button></a>
-                    </div>
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="/img/slide/slide-10.png" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown" style="color:#ffa052">Invest  <span>INR 10,00,000 to our Startup</span></h2>
+                <!-- <i><h4 class="animate__animated animate__fadeInUp"></h4></i> -->
+                <button class="btn-get-started animate__animated animate__fadeInUp scrollto" id="rzp-button1" style="color:black">INVEST</button>
+                <a href="/comingsoon"><button class="btn-get-started animate__animated animate__fadeInUp scrollto" id="rzp-button1" style="color:black">INVEST in CRYPTO</button></a>
                 
-                    <div class="column is-5">
-                        <figure class="image">
-                            
-                            <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1" 
-                            style="border-radius: 10px" alt="">
-
-                        </figure>
-                    </div>
-
-                </div>
+              </div>
             </div>
-       
-      
-</section>
+          </div>
+
+                  
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-double-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-double-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+  
+  <section id="about" class="about">
+    <div class="container">
+
+      <div class="section-title">
+        <!-- <div class="animate__animated animate__fadeInRight"> -->
+        <h2 >ThankYou For Invertsing</h2>
+        <p>handShake for Startups is on a mission to support thriving, diverse, and inclusive startup communities around the world. We connect startups with the right people, products, and best practices to help your startup grow.
+        </p>
+      <!-- </div> -->
+      </div>
+
+    </div>
+  </section><!-- End About Us Section -->
+  
 
 
 </div>
@@ -185,7 +206,7 @@
             "key": "rzp_test_7O3kqfoR6kS89b", // Enter the Key ID generated from the Dashboard
             "name": "CRED",
             "description": "Test Transaction",
-            "image": "https://example.com/your_logo",
+            "image": "/img/cred1.png",
             "order_id": info.data.id,
             "callback_url": "https://eneqd3r9zrjok.x.pipedream.net/",
             "theme": {
