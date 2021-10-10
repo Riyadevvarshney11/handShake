@@ -12,10 +12,12 @@ router.get('/schools_colleges',homeController.edu);
 router.get('/investors',homeController.investors);
 router.get('/learn',homeController.learn)
 router.get('/startups',homeController.startups);
-router.use('/signup',require('./signUp'));
-router.use('/investor',require('./investor'));
 router.get('/startup_db',homeController.startup_db)
 router.get('/investor_db',homeController.investor_db);
+
+router.use('/signup',require('./signUp'));
+router.use('/investor',require('./investor'));
+router.use('/startup',require('./startup'));
 
 /* 
 for any further requests, access from here

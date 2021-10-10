@@ -23,10 +23,10 @@
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Sign up</h2>
-                        <form method="POST" class="register-form" id="register-form">
+                        <form method="POST" class="register-form" id="register-form" action="/startup/create">
                             <div class="form-group">
                                 <label for="company"><i class="fas fa-building"></i></label>
-                                <input type="text" name="company" id="company" placeholder="Company/Product Name"/>
+                                <input type="text" name="companyName" id="company" placeholder="Company/Product Name"/>
                             </div>
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
@@ -42,11 +42,11 @@
                             </div>
                             <div class="form-group">
                                 <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="pass" id="pass" placeholder="Password"/>
+                                <input type="password" name="password" id="pass" placeholder="Password"/>
                             </div>
                             <div class="form-group">
                                 <label for="description"><i class="zmdi zmdi-sort-desc"></i></label>
-                                <input type="description" name="description" id="description" placeholder="Product description"/>
+                                <input type="description" name="productDescription" id="description" placeholder="Product description"/>
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />

@@ -1,7 +1,15 @@
 const mongoose = require('mongoose');
 
 const startupSchema = new mongoose.Schema({
+    companyName: {
+        type: String,
+        required: true
+    },
     name: {
+        type: String,
+        required: true
+    },
+    phone: {
         type: String,
         required: true
     },
