@@ -1,0 +1,19 @@
+.hero.is-link {
+    background-color:white;
+    color: #ffa952;
+}
+
+.hero.is-fullheight {
+    min-height: 100vh;
+}
+
+.hero.is-link .title {
+    color: #ffa952;
+}
+
+.hero.is-link .subtitle {
+    color: #ffa952);
+}
+.hero.is-link .subtitle {
+    color: #ffa952;
+}
