@@ -36,7 +36,7 @@ passport.use('startup-local',new LocalStrategy({
     },
     function(email, password, done){
         //find a user and establish the identity
-        console.log('local-startup called');
+        // console.log('local-startup called');
         Startup.findOne({email: email},function(err,user){
             if(err){
                 console.log("Error in finding startup ---> Passport");
@@ -49,8 +49,8 @@ passport.use('startup-local',new LocalStrategy({
                 //arguement1 is err arguement2 is authicated or not
             }
             //user found
-            user.startup = true
-            console.log('user found');
+            // user.startup = true
+            // console.log('user found');
             return done(null,user);
             
         });
@@ -60,7 +60,7 @@ passport.use('startup-local',new LocalStrategy({
 
 //serializing the user to decide which key is to be kept in the cookies
 passport.serializeUser(function(user,done){
-    console.log('serializer called');
+    // console.log('serializer called');
     done(null,user.id);
 });
 
@@ -70,7 +70,7 @@ passport.deserializeUser(function(id,done){
         if(err){
             console.log(err);
         }
-        console.log(result);
+        // console.log(result);
 
         if(result != null){
             Investor.findById(id,function(err,user){
@@ -78,7 +78,7 @@ passport.deserializeUser(function(id,done){
                     console.log("Error in finding user ---> Passport");
                     return done(err);
                 }
-                console.log('investor deserializer called',user);
+                // console.log('investor deserializer called',user);
                 return done(null,user);
             });
         }else{
@@ -87,7 +87,7 @@ passport.deserializeUser(function(id,done){
                     console.log("Error in finding user ---> Passport");
                     return done(err);
                 }
-                console.log('startup deserializer called',user);
+                // console.log('startup deserializer called',user);
                 return done(null,user);
             });
         }
@@ -107,13 +107,11 @@ passport.checkAuthentication = function(request,response,next){
 }
 
 passport.setAuthenticatedUser = function(request,response ,next){
-    console.log('set authentucation called');
+    // console.log('set authentucation called');
     if(request.isAuthenticated()){
         // req.user contains the current signed in user from the session cokkie and we are just sending this to the locals for the views
         response.locals.user = request.user;
         console.log(request.user);
-    }else{
-        console.log('not authenticated');
     }
     next();
 }
