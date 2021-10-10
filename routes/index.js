@@ -14,6 +14,8 @@ router.get('/learn',homeController.learn)
 router.get('/startups',homeController.startups);
 router.get('/startup_db',homeController.startup_db)
 router.get('/investor_db',homeController.investor_db);
+router.get('/comingsoon',homeController.comingsoon);
+
 
 router.use('/signup',require('./signUp'));
 router.use('/investor',require('./investor'));

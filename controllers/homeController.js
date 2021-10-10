@@ -37,3 +37,7 @@ module.exports.startup_db = function(req,res){
 module.exports.investor_db = function(req,res){
     return res.render('investor_db');
 }
+
+module.exports.comingsoon = function(req,res){
+    return res.render('comingsoon');
+}
