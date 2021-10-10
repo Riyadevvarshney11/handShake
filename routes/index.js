@@ -14,16 +14,13 @@ router.get('/learn',homeController.learn)
 router.get('/startups',homeController.startups);
 router.get('/startup_db',homeController.startup_db)
 router.get('/investor_db',homeController.investor_db);
-<<<<<<< HEAD
 router.get('/razorpay',homeController.razorpay);
-=======
 router.get('/comingsoon',homeController.comingsoon);
-
->>>>>>> 17c45a83e9708c9d860c65300d7b208b73db146b
-
 router.use('/signup',require('./signUp'));
 router.use('/investor',require('./investor'));
 router.use('/startup',require('./startup'));
+
+
 
 /* 
 for any further requests, access from here

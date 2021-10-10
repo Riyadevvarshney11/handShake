@@ -11,6 +11,9 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
 
+
+
+
 const  razorpay= new Razorpay({
     key_id:'rzp_test_7O3kqfoR6kS89b',
     key_secret:'RmkBpMapZeVE0pP0xon4cve4' ,
@@ -59,7 +62,7 @@ app.use(passport.session());
 app.use(passport.setAuthenticatedUser);
 
 //=========== razorpay code ===================
-app.get('/',(req,res)=>{
+app.get('/razorpay',(req,res)=>{
     res.render('razorpay.ejs')
 })
 app.post('/order',(req,res) => {
@@ -82,12 +85,18 @@ app.post('/is-order-complete',(req,res)=>{
             res.send('Payment Successful')
 
         } else{
-            res.redirect('/')
+            res.redirect('/razorpay')
         }
     })
 })
 //========  express router ===============
 app.use('/',require('./routes'));
+
+//========   particlejs   ================
+// particlesJS.load('particles-js', 'assets/particles.json', function() {
+//     console.log('callback - particles.js config loaded');
+//   });
+
 
 app.listen(port,function(err){
     if(err){

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Handshake - StartUps</title>
+    <title>HPayment Gateway</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -29,6 +29,9 @@
 
 <body>
     <!-- ======= Header ======= -->
+    
+
+                      
     <header id="header" class="d-flex align-items-center">
         <div class="container d-flex align-items-center justify-content-between">
 
@@ -54,7 +57,7 @@
 
         </div>
     </header><!-- End Header -->
-   
+  
     <section class="hero is-link is-fullheight" >
      
         <div class="hero-body is-centered">
@@ -62,11 +65,13 @@
                 <div class="columns is-centered is-vcentered">
                     
                     <div class="column is-6">
+
+                      
                         <p class="title is-size-1">CRED</p>
-                        <p class="subtitle is-size-4">Invest INR 10,00,000 to our Startup</p>
+                        <p class="subtitle is-size-4" style="color: #ffa952;">Invest INR 10,00,000 to our Startup</p>
 
                         <button class="button is-link is-light is-medium" id="rzp-button1">INVEST</button>
-                        <button class="button is-link is-light is-medium" id="rzp-button1">INVEST in CRYPTO</button>
+                        <a href="/comingsoon"><button class="button is-link is-light is-medium" id="rzp-button1">INVEST in CRYPTO</button></a>
                     </div>
                 
                     <div class="column is-5">
@@ -80,12 +85,12 @@
 
                 </div>
             </div>
-        </div>
+       
       
 </section>
 
 
-
+</div>
 <!-- ======= Footer ======= -->
 <footer id="footer">
     <div class="footer-top">
@@ -171,7 +176,7 @@
     <script src="/vendor/purecounter/purecounter.js"></script>
     <script src="/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="/vendor/waypoints/noframework.waypoints.js"></script>
-    
+    <script src="particles.js"></script>
     <script>
         axios.post('/order').then((info) =>{
           console.log(info)  
@@ -195,6 +200,11 @@
 }
         })
     </script>
+    <!-- <script>
+      particlesJS.load('particles-js', 'assets/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+    });
+  </script> -->
     <!-- Template Main JS File -->
     <script src="/js/main.js"></script>
 
