@@ -16,7 +16,8 @@ module.exports.create = function(req,res){
 }
 
 module.exports.createSession = function(request,response){
-    console.log("Signed In");
+    if(request.user.email == "walter@example.com")
+        return response.redirect('/investor_db');
     return response.redirect('/');
 }
 

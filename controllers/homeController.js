@@ -37,6 +37,12 @@ module.exports.startup_db = function(req,res){
 module.exports.investor_db = function(req,res){
     return res.render('investor_db');
 }
+<<<<<<< HEAD
 module.exports.razorpay = function(req,res){
     return res.render('razorpay');
+=======
+
+module.exports.comingsoon = function(req,res){
+    return res.render('comingsoon');
+>>>>>>> 17c45a83e9708c9d860c65300d7b208b73db146b
 }

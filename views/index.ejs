@@ -91,7 +91,7 @@
 
       <div class="logo">
         
-        <a href="index.html"><img src="/img/logo.png" alt="" class="img-fluid" style="max-height: 280px;"></a>
+        <a href="/"><img src="/img/logo.png" alt="" class="img-fluid" style="max-height: 280px;"></a>
         
         
       </div>
@@ -104,11 +104,16 @@
           <li><a class="nav-link scrollto" href="/featured">Featured</a></li>
           <li><a class="nav-link scrollto" href="/schools_colleges">Schools/Colleges</a></li>
           <li><a class="nav-link scrollto" href="/learn">Learn</a></li>
-          <% if(locals.user){  %> 
-          <li><a class="nav-link scrollto" href="/investor/sign-out"><span style="color: #EF5A5A;"> Sign Out  </span></a></li>
-          <% }else{  %> 
-          <li><a class="nav-link scrollto" href="/login"><span style="color: #EF5A5A;">Sign In</span></a></li>
-          <% } %> 
+          <% if(locals.user){ %>
+            <% if(locals.user.companyName){ %>
+              <li><a class="nav-link scrollto" href="/startup/sign-out"><span style="color: #EF5A5A;"> Sign Out  </span></a></li>
+              <% }else{ %>
+                <li><a class="nav-link scrollto" href="/investor/sign-out"><span style="color: #EF5A5A;"> Sign Out </span></a>
+                </li>
+              <% } %>
+          <% }else{ %>
+                <li><a class="nav-link scrollto" href="/login"><span style="color: #EF5A5A;">Sign In</span></a></li>
+              <% } %>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -236,7 +241,7 @@
         <div class="text-center">
           <h3>List your Startup Now!</h3>
           <p> Whether you’re starting out, or scaling to meet demand, connect with the right people, products, and best practices to help your startup grow.</p>
-          <a class="cta-btn" href="#">Call To Action</a>
+          <a class="cta-btn" href="/signup/startup">Register</a>
         </div>
 
       </div>
@@ -524,14 +529,14 @@
                 <i class="bx bx-map"></i>
                 <div class="hvr-grow">
                 <h4>Address</h4>
-                <p>A108 Adam Street,<br>New York, NY 535022</p>
+                <p>Delhi Technological University<br>New Delhi,India</p>
               </div>
               </div>
               <div class="col-lg-6 info info-bg d-flex flex-column align-items-stretch">
                 <i class="bx bx-phone"></i>
                 <div class="hvr-grow">
                   <h4>Call Us</h4>
-                  <p>+1 5589 55488 55<br>+1 5589 22548 64</p>
+                  <p>+91 9876543210</p>
                 </div>
             
               </div>
@@ -539,7 +544,7 @@
                 <i class="bx bx-envelope"></i>
                 <div class="hvr-grow">
                   <h4>Email Us</h4>
-                  <p>contact@example.com<br>info@example.com</p>
+                  <p>contact@handshake.com<br>info@handshake.com</p>
                 </div>
                 
               </div>
@@ -547,7 +552,7 @@
                 <i class="bx bx-time-five"></i>
                 <div class="hvr-grow">
                   <h4>Working Hours</h4>
-                  <p>Mon - Fri: 9AM to 5PM<br>Sunday: 9AM to 1PM</p>
+                  <p>Mon - Fri: 9AM to 5PM</p>
                 </div>
                 
                 
@@ -606,10 +611,10 @@
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>handShake</h3>
             <p>
-              A108 Adam Street <br>
-              NY 535022, USA<br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Delhi Technological University <br>
+              New Delhi, India<br><br>
+              <strong>Phone:</strong> +91 9876543210<br>
+              <strong>Email:</strong> info@handshake.com<br>
             </p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
