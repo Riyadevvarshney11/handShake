@@ -4,20 +4,74 @@
 
 handShake for Startups is a platform to support thriving, diverse, and inclusive startup communities around the world. We connect startups with the right people, products, and best practices to help your startup grow.
 
-ss1
+## Table of Contents
+1. [Live Demo](#live-demo)
+2. [Features](#features)
+3. [Technologies](#technologies)
+4. [Installation](#installation)
+
+
+
+![Screenshot](./Screenshots/carousel.png)
+![Screenshot](./Screenshots/home.png)
+![Screenshot](./Screenshots/home2.png)
+
+## Live Demo 
+***
+Project Link: 
 
 ## Features
-1. A platform where startups, small or large, can list themselves and showcase their products.
-2. A marketplace where investors can find new and upcoming startups to invest in and follow their progress.
-3. A connecting medium between ideas and investments.
-4. A unique concept to list budding startups from schools and colleges.
-5. A special section for inspiring stories of startups growing from scratch.
-6. A learn section for amateurs as well as experts to learn and share knowledge.
+***
 
+* A platform where startups, small or large, can list themselves and showcase their products.
+* A marketplace where investors can find new and upcoming startups to invest in and follow their progress.
+* A connecting medium between ideas and investments.
+* A unique concept to list budding startups from schools and colleges.
+* A special section for inspiring stories of startups growing from scratch.
+* A learn section for amateurs as well as experts to learn and share knowledge.
 ## StartUps
-
-
+![Screenshot](./Screenshots/startups.png)
+ 
+ 
 ## Investors
+![Screenshot](./Screenshots/investors.png)
+ 
+## Screenshots
+![Screenshot](./Screenshots/featured.png)
+![Screenshot](./Screenshots/signin.png)
+![Screenshot](./Screenshots/investorProfile.png)
+![Screenshot](./Screenshots/home3.png)
+
+## 
 
 
-### how to use
+## Technologies
+***
+A list of technologies used within the project:
+* HTML5
+* CCS3
+* JavaScript
+* Express
+* MongoDB
+* NodeJs
+* Moongoose
+* PassportJS
+* RazorPay API 
+* Heroku
+
+## Installation
+***
+A little intro about the installation. 
+```
+$ git clone https://github.com/garvit170/RgR_Innovathon.git
+
+```
+```
+$ npm install
+
+```
+```
+$ node index.js 
+or
+$ npm start
+```
