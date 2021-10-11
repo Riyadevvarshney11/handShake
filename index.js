@@ -62,6 +62,7 @@ app.use(passport.setAuthenticatedUser);
 
 //=========== razorpay code ===================
 app.get('/razorpay',(req,res)=>{
+    
     res.render('razorpay.ejs')
 })
 app.post('/order',(req,res) => {

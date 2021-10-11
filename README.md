@@ -18,7 +18,7 @@ handShake for Startups is a platform to support thriving, diverse, and inclusive
 
 ## Live Demo 
 ***
-Project Link: 
+Project Link: https://young-falls-93265.herokuapp.com/
 
 ## Features
 ***
