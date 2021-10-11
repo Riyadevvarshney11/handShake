@@ -11,9 +11,6 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
 
-
-
-
 const  razorpay= new Razorpay({
     key_id:'rzp_test_7O3kqfoR6kS89b',
     key_secret:'RmkBpMapZeVE0pP0xon4cve4' ,
