@@ -20,9 +20,10 @@ const  razorpay= new Razorpay({
 
 })
 dotenv.config();
+
 let order_id_variable
 // form data parsing
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended:false}));
 
 
 //================ Static Files ==================
@@ -67,8 +68,8 @@ app.get('/razorpay',(req,res)=>{
 })
 app.post('/order',(req,res) => {
     let options ={
-        "amount": 1000000000,
-        "currency": "INR",
+        amount: 10000000000,
+        currency: "INR",
         
     };
     razorpay.orders.create(options, function(err,order){
@@ -80,7 +81,7 @@ app.post('/order',(req,res) => {
 
 app.post('/is-order-complete',(req,res)=>{
   
-    razorpay.payments.fetch(rq.body.razorpay_payment_id).then((paymentDocument) => {
+    razorpay.payments.fetch(req.body.razorpay_payment_id).then((paymentDocument) => {
         if(paymentDocument.status = 'captured'){
             res.send('Payment Successful')
 
