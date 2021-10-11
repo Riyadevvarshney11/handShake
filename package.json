@@ -19,6 +19,7 @@
   "homepage": "https://github.com/garvit170/RgR_Innovathon#readme",
   "dependencies": {
     "animate.css": "^4.1.1",
+    "axios": "^0.22.0",
     "connect-mongo": "^4.6.0",
     "cookie-parser": "^1.4.5",
     "dotenv": "^10.0.0",

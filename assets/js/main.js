@@ -1,4 +1,4 @@
-
+window.axios = require('axios');
 (function() {
   "use strict";
 
