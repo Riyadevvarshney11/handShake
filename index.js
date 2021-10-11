@@ -34,6 +34,7 @@ app.use(cookieParser());
 app.set('view engine','ejs');
 app.set('views','./views');
 
+
 //======== Session Creation ==================
 //mongo store is used to store the session cookie in the db
 app.use(session({
@@ -68,14 +69,19 @@ app.get('/razorpay',(req,res)=>{
 })
 app.post('/order',(req,res) => {
     let options ={
-        amount: 10000000000,
-        currency: "INR",
-        
+        "amount": 1000000,
+        "currency": "INR",  
     };
     razorpay.orders.create(options, function(err,order){
-        order_id_variable=order.id
-        console.log(order)
-        res.json(order)
+        if(err){
+            console.log("Error in creating order",err);
+            return;
+        }
+        console.log(order);
+        order_id_variable=order.id;
+        console.log(order);
+        res.json(order);
+        //alert(order);
     })
 })
 
@@ -83,8 +89,7 @@ app.post('/is-order-complete',(req,res)=>{
   
     razorpay.payments.fetch(req.body.razorpay_payment_id).then((paymentDocument) => {
         if(paymentDocument.status = 'captured'){
-            res.send('Payment Successful')
-
+            res.redirect('/');
         } else{
             res.redirect('/razorpay')
         }
