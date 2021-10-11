@@ -40,9 +40,10 @@ Project Link:
 ![Screenshot](./Screenshots/featured.png)
 ![Screenshot](./Screenshots/signin.png)
 ![Screenshot](./Screenshots/investorProfile.png)
-![Screenshot](./Screenshots/home3.png)
+![Screenshot 2021-10-11 135939](https://user-images.githubusercontent.com/59473485/136758279-2f0558f7-410d-4118-9662-606b1930ded9.png)
 
 ## 
+
 
 
 ## Technologies
